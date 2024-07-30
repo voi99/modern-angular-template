@@ -11,14 +11,18 @@
 
 @include mat.core();
 
+@mixin apply-theme-styles($theme) {
+  @include colors.theme-colors($theme);
+  @include buttons.color-variants($theme);
+  @include icon-buttons.color-variants($theme);
+  @include icons.color-variants($theme);
+  @include fab.color-variants($theme);
+  @include chips.color-variants($theme);
+}
+
 :root {
   @include mat.all-component-themes(m3.$light-theme);
-  @include colors.theme-colors(m3.$light-theme);
-  @include buttons.color-variants(m3.$light-theme);
-  @include icon-buttons.color-variants(m3.$light-theme);
-  @include icons.color-variants(m3.$light-theme);
-  @include fab.color-variants(m3.$light-theme);
-  @include chips.color-variants(m3.$light-theme);
+  @include apply-theme-styles(m3.$light-theme);
 
   @include buttons.sizes(m3.$light-theme);
   @include form-fields.sizes(m3.$light-theme);
@@ -26,6 +30,7 @@
 
 .dark {
   @include mat.all-component-colors(m3.$dark-theme);
+  @include apply-theme-styles(m3.$dark-theme);
 }
 
 @include mat.typography-hierarchy(m3.$light-theme);
