@@ -4,6 +4,7 @@
 @use "colors";
 @use "buttons";
 @use "icon-buttons";
+@use "icons";
 
 @include mat.core();
 
@@ -12,6 +13,7 @@
   @include colors.theme-colors(m3.$light-theme);
   @include buttons.color-variants(m3.$light-theme);
   @include icon-buttons.color-variants(m3.$light-theme);
+  @include icons.color-variants(m3.$light-theme);
 }
 
 .dark {

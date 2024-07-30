@@ -1,0 +1,21 @@
+@use "@angular/material" as mat;
+
+@mixin color-variants($theme) {
+  .mat-icon {
+    &.mat-primary {
+      @include mat.icon-color($theme, $color-variant: primary);
+    }
+
+    &.mat-secondary {
+      @include mat.icon-color($theme, $color-variant: secondary);
+    }
+
+    &.mat-tertiary {
+      @include mat.icon-color($theme, $color-variant: tertiary);
+    }
+
+    &.mat-error {
+      @include mat.icon-color($theme, $color-variant: error);
+    }
+  }
+}

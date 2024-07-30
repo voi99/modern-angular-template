@@ -13,6 +13,7 @@ import { MatIcon } from "@angular/material/icon";
       <button mat-icon-button class="mat-tertiary">
         <mat-icon> note </mat-icon>
       </button>
+      <mat-icon class="mat-error">light_mode</mat-icon>
     </div>
   `,
   styles: ``,
