@@ -33,18 +33,24 @@ This repository serves as a template for creating a new modern Angular project. 
    node setup.js
    ```
 
-4. **Follow the prompts:**
+   You will be prompted to enter your project name. Ensure that you provide a non-empty name:
 
-   The setup script will prompt you to enter your project name. This will replace the placeholders in the package.json and angular.json files with your project name.
+   ```sh
+   Enter your project name: my-angular-app
+   ```
 
-5. **Install dependencies:**
+4. **Install dependencies:**
 
    ```sh
    bun install
    ```
 
-6. **Start the development server:**
+5. **Start the development server:**
 
    ```sh
    ng serve
    ```
+
+## Contributing
+
+If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
