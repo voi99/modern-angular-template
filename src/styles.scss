@@ -6,6 +6,7 @@
 @use "icon-buttons";
 @use "icons";
 @use "form-fields";
+@use "fab";
 
 @include mat.core();
 
@@ -15,6 +16,7 @@
   @include buttons.color-variants(m3.$light-theme);
   @include icon-buttons.color-variants(m3.$light-theme);
   @include icons.color-variants(m3.$light-theme);
+  @include fab.color-variants(m3.$light-theme);
 
   @include buttons.sizes(m3.$light-theme);
   @include form-fields.sizes(m3.$light-theme);
