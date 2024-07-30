@@ -1,29 +1,22 @@
 @use "@angular/material" as mat;
+
+@use "m3-theme" as m3;
 @use "colors";
 @use "buttons";
 
 @include mat.core();
 
-$modern-angular-template-theme: mat.define-theme(
-  (
-    color: (
-      theme-type: light,
-      primary: mat.$azure-palette,
-      tertiary: mat.$blue-palette,
-    ),
-    density: (
-      scale: 0,
-    ),
-  )
-);
-
 :root {
-  @include mat.all-component-themes($modern-angular-template-theme);
-  @include colors.theme-colors($modern-angular-template-theme);
-  @include buttons.color-variants($modern-angular-template-theme);
+  @include mat.all-component-themes(m3.$light-theme);
+  @include colors.theme-colors(m3.$light-theme);
+  @include buttons.color-variants(m3.$light-theme);
 }
 
-@include mat.typography-hierarchy($modern-angular-template-theme);
+.dark {
+  @include mat.all-component-colors(m3.$dark-theme);
+}
+
+@include mat.typography-hierarchy(m3.$light-theme);
 
 @tailwind base;
 @tailwind utilities;

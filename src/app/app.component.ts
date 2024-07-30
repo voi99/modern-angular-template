@@ -6,7 +6,11 @@ import { MatButton } from "@angular/material/button";
   selector: "app-root",
   standalone: true,
   imports: [RouterOutlet, MatButton],
-  template: ` <button mat-flat-button class="mat-tonal">Test</button> `,
+  template: `
+    <div class="bg-surface-container p-2">
+      <button mat-flat-button class="mat-tonal">Test</button>
+    </div>
+  `,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
