@@ -33,7 +33,6 @@
     "angular-eslint": "18.1.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.6.0",
-    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",

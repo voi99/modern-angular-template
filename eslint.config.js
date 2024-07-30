@@ -2,7 +2,6 @@
 const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 const angular = require("angular-eslint");
-const prettierConfig = require("eslint-config-prettier");
 const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommended");
 
 module.exports = [
@@ -47,8 +46,7 @@ module.exports = [
         ],
         "@angular-eslint/template/prefer-self-closing-tags": "error",
       },
-    },
-    prettierConfig
+    }
   ),
   eslintPluginPrettierRecommended,
 ];

@@ -3,9 +3,13 @@
 This repository serves as a template for creating a new modern Angular project. Follow the instructions below to set up your project.
 
 - Zoneless
-- Material 3 (components color variants and sizes) and Tailwind integrations
+- Material 3 (custom theme, components color variants and sizes)
+- Tailwind
+- Material & Tailwind integration
 - Bun package manager
-- Eslint (flat config) & Prettier
+- Eslint (new flat config) & Prettier
+- Schematics (OnPush change detection, inlineStyle and inlineTemplate)
+- stylePreprocessorOptions (includePaths: ["src/scss"])
 
 ## Setup Instructions
 

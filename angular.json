@@ -13,10 +13,8 @@
         "@schematics/angular:component": {
           "style": "scss",
           "changeDetection": "OnPush",
-          "flat": true,
           "inlineStyle": true,
-          "inlineTemplate": true,
-          "skipTests": true
+          "inlineTemplate": true
         }
       },
       "root": "",
