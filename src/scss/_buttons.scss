@@ -1,0 +1,26 @@
+@use "@angular/material" as mat;
+
+@mixin color-variants($theme) {
+  .mdc-button {
+    &.mat-secondary {
+      @include mat.button-color($theme, $color-variant: secondary);
+    }
+
+    &.mat-tertiary {
+      @include mat.button-color($theme, $color-variant: tertiary);
+    }
+
+    &.mat-error {
+      @include mat.button-color($theme, $color-variant: error);
+    }
+
+    &.mat-tonal {
+      background-color: mat.get-theme-color($theme, secondary-container);
+      color: mat.get-theme-color($theme, on-secondary-container);
+
+      &:hover {
+        box-shadow: var(--mat-app-elevation-shadow-level-1);
+      }
+    }
+  }
+}

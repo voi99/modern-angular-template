@@ -1,5 +1,6 @@
 @use "@angular/material" as mat;
 @use "colors";
+@use "buttons";
 
 @include mat.core();
 
@@ -19,6 +20,7 @@ $modern-angular-template-theme: mat.define-theme(
 :root {
   @include mat.all-component-themes($modern-angular-template-theme);
   @include colors.theme-colors($modern-angular-template-theme);
+  @include buttons.color-variants($modern-angular-template-theme);
 }
 
 @include mat.typography-hierarchy($modern-angular-template-theme);
