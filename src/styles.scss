@@ -5,6 +5,7 @@
 @use "buttons";
 @use "icon-buttons";
 @use "icons";
+@use "form-fields";
 
 @include mat.core();
 
@@ -16,6 +17,7 @@
   @include icons.color-variants(m3.$light-theme);
 
   @include buttons.sizes(m3.$light-theme);
+  @include form-fields.sizes(m3.$light-theme);
 }
 
 .dark {
