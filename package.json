@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "prettier": "bunx prettier --write ."
+    "prettier": "bunx prettier --write .",
+    "prepare": "husky",
+    "quiet-lint": "ng lint --quiet"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +36,7 @@
     "autoprefixer": "^10.4.19",
     "eslint": "^9.6.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.4",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
