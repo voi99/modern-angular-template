@@ -3,7 +3,7 @@
 @mixin color-variants($theme) {
   .mat-mdc-chip {
     &.mat-primary {
-      @include mat.chips-color($theme, $color-variant: secondary);
+      @include mat.chips-color($theme, $color-variant: primary);
     }
 
     &.mat-tertiary {

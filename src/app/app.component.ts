@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
 import { MatButton, MatIconButton, MatMiniFabButton } from "@angular/material/button";
 import { MatIcon } from "@angular/material/icon";
 import { MatFormField, MatLabel } from "@angular/material/form-field";
@@ -10,7 +9,6 @@ import { MatChipListbox, MatChipOption } from "@angular/material/chips";
   selector: "app-root",
   standalone: true,
   imports: [
-    RouterOutlet,
     MatButton,
     MatIconButton,
     MatIcon,
@@ -63,7 +61,6 @@ import { MatChipListbox, MatChipOption } from "@angular/material/chips";
       </mat-chip-listbox>
     </div>
   `,
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {}
