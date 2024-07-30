@@ -1,0 +1,17 @@
+@use "@angular/material" as mat;
+
+@mixin color-variants($theme) {
+  .mat-mdc-chip {
+    &.mat-primary {
+      @include mat.chips-color($theme, $color-variant: secondary);
+    }
+
+    &.mat-tertiary {
+      @include mat.chips-color($theme, $color-variant: tertiary);
+    }
+
+    &.mat-error {
+      @include mat.chips-color($theme, $color-variant: error);
+    }
+  }
+}
