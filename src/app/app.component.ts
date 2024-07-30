@@ -1,14 +1,18 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { MatButton } from "@angular/material/button";
+import { MatButton, MatIconButton } from "@angular/material/button";
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, MatButton],
+  imports: [RouterOutlet, MatButton, MatIconButton, MatIcon],
   template: `
-    <div class="bg-surface-container p-2">
+    <div class="bg-surface-container p-2 flex items-center gap-2 justify-center">
       <button mat-flat-button class="mat-tonal">Test</button>
+      <button mat-icon-button class="mat-tertiary">
+        <mat-icon> note </mat-icon>
+      </button>
     </div>
   `,
   styles: ``,

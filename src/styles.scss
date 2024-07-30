@@ -3,6 +3,7 @@
 @use "m3-theme" as m3;
 @use "colors";
 @use "buttons";
+@use "icon-buttons";
 
 @include mat.core();
 
@@ -10,6 +11,7 @@
   @include mat.all-component-themes(m3.$light-theme);
   @include colors.theme-colors(m3.$light-theme);
   @include buttons.color-variants(m3.$light-theme);
+  @include icon-buttons.color-variants(m3.$light-theme);
 }
 
 .dark {
