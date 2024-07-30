@@ -5,7 +5,11 @@ import { RouterOutlet } from "@angular/router";
   selector: "app-root",
   standalone: true,
   imports: [RouterOutlet],
-  template: ``,
+  template: `
+    <div class="bg-primary-container text-on-primary-container">
+    Test
+    </div>
+  `,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
