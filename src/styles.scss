@@ -14,6 +14,8 @@
   @include buttons.color-variants(m3.$light-theme);
   @include icon-buttons.color-variants(m3.$light-theme);
   @include icons.color-variants(m3.$light-theme);
+
+  @include buttons.sizes(m3.$light-theme);
 }
 
 .dark {

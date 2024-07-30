@@ -9,7 +9,10 @@ import { MatIcon } from "@angular/material/icon";
   imports: [RouterOutlet, MatButton, MatIconButton, MatIcon],
   template: `
     <div class="bg-surface-container p-2 flex items-center gap-2 justify-center">
-      <button mat-flat-button class="mat-tonal">Test</button>
+      <button mat-flat-button class="mat-xs">Test</button>
+      <button mat-flat-button class="mat-small">Test</button>
+      <button mat-flat-button class="mat-medium">Test</button>
+      <button mat-flat-button>Test</button>
       <button mat-icon-button class="mat-tertiary">
         <mat-icon> note </mat-icon>
       </button>

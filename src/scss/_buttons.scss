@@ -24,3 +24,19 @@
     }
   }
 }
+
+@mixin sizes($theme) {
+  .mdc-button {
+    &.mat-xs {
+      @include mat.button-density(-3);
+    }
+
+    &.mat-small {
+      @include mat.button-density(-2);
+    }
+
+    &.mat-medium {
+      @include mat.button-density(-1);
+    }
+  }
+}
