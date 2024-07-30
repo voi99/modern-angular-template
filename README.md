@@ -4,10 +4,10 @@ This repository serves as a template for creating a new modern Angular project. 
 
 - Zoneless
 - Material 3 (custom theme, components color variants and sizes)
-- Tailwind
-- Material & Tailwind integration
+- Tailwind (Integration with Material)
 - Bun package manager
 - Eslint (new flat config) & Prettier
+- Husky (pre-commit linting)
 - Schematics (OnPush change detection, inlineStyle and inlineTemplate)
 - stylePreprocessorOptions (includePaths: ["src/scss"])
 
