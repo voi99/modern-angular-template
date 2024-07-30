@@ -9,7 +9,6 @@ This repository serves as a template for creating a new modern Angular project. 
 - Eslint (new flat config) & Prettier
 - Husky (pre-commit linting)
 - Schematics (OnPush change detection, inlineStyle and inlineTemplate)
-- stylePreprocessorOptions (includePaths: ["src/scss"])
 
 ## Setup Instructions
 
