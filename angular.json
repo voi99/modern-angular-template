@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "modern-angular-template": {
+    "__PROJECT_NAME__": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,7 +26,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/modern-angular-template",
+            "outputPath": "dist/__PROJECT_NAME__",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "modern-angular-template:build:production"
+              "buildTarget": "__PROJECT_NAME__:build:production"
             },
             "development": {
-              "buildTarget": "modern-angular-template:build:development"
+              "buildTarget": "__PROJECT_NAME__:build:development"
             }
           },
           "defaultConfiguration": "development"
