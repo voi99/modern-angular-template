@@ -48,7 +48,7 @@ import { CardComponent } from "../card/card.component";
   `,
   styles: `
     .tw-mat-tile {
-      @apply rounded-lg p-4 flex items-center justify-center flex-col;
+      @apply rounded-xl p-4 flex items-center justify-center flex-col;
 
       p {
         margin: 0;

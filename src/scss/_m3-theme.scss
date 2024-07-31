@@ -142,6 +142,10 @@ $light-theme: mat.define-theme(
       primary: $_primary,
       tertiary: $_tertiary,
     ),
+    typography: (
+      brand-family: var(--readex-font-family),
+      plain-family: var(--readex-font-family),
+    ),
   )
 );
 $dark-theme: mat.define-theme(

@@ -21,6 +21,8 @@
 }
 
 :root {
+  --readex-font-family: "Readex Pro", sans-serif;
+
   @include mat.all-component-themes(m3.$light-theme);
   @include apply-theme-styles(m3.$light-theme);
 
@@ -45,7 +47,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: (--readex-font-family);
 }
 
 * {
