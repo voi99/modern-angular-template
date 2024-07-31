@@ -8,7 +8,7 @@ import { TwMatIntegrationComponent } from "./components/tw-mat-integration/tw-ma
   standalone: true,
   imports: [ButtonsComponent, FormFieldsComponent, TwMatIntegrationComponent],
   template: `
-    <div class="bg-surface-container p-4 h-full">
+    <div class="bg-surface-container p-4 min-h-full">
       <div class="flex flex-col gap-4 max-w-screen-lg mx-auto">
         @defer {
           <app-tw-mat-integration />
