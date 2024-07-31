@@ -2,7 +2,7 @@
 
 This repository serves as a template for creating a new modern Angular project. Follow the instructions below to set up your project.
 
-- Zoneless (start the setup from the `with-zone` branch if you would like to use `zone.js`)
+- Zoneless by default (start the setup from the `with-zone` branch if you would like to use `zone.js`)
 - Material 3 (custom theme, components color variants and sizes)
 - Tailwind (Integration with Material)
 - Bun package manager
