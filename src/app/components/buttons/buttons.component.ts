@@ -10,11 +10,11 @@ import { CardComponent } from "../card/card.component";
     <app-card cardTitle="Buttons">
       <div class="flex flex-col gap-4">
         <div class="flex gap-2 flex-wrap items-center">
-          <button mat-flat-button class="mat-xs mat-tertiary">Test</button>
-          <button mat-flat-button class="mat-small mat-error">Test</button>
-          <button mat-flat-button class="mat-medium">Test</button>
-          <button mat-flat-button class="mat-secondary">Test</button>
-          <button mat-flat-button class="mat-tonal">Test</button>
+          <button mat-flat-button class="mat-xs mat-tertiary">xs tertiary</button>
+          <button mat-flat-button class="mat-small mat-error">small error</button>
+          <button mat-flat-button class="mat-medium">medium default</button>
+          <button mat-flat-button class="mat-secondary">base secondary</button>
+          <button mat-flat-button class="mat-tonal">base mat-tonal</button>
         </div>
       </div>
     </app-card>

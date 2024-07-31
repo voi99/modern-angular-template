@@ -12,7 +12,7 @@ import { MatCard, MatCardHeader, MatCardTitle, MatCardContent } from "@angular/m
           {{ cardTitle() }}
         </mat-card-title>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content class="mt-4">
         <ng-content />
       </mat-card-content>
     </mat-card>
