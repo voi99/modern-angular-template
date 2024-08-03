@@ -9,15 +9,15 @@ import { CardComponent } from "../card/card.component";
   imports: [MatFormField, MatLabel, MatInput, CardComponent],
   template: `
     <app-card cardTitle="Form Fields">
-      <div class="flex gap-2 flex-wrap items-center">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 items-center">
         @for (size of formFieldSizes; track size) {
           <mat-form-field appearance="outline" subscriptSizing="dynamic" [class]="size">
-            <mat-label>Email</mat-label>
+            <mat-label>{{ size }}</mat-label>
             <input matInput />
           </mat-form-field>
         }
         <mat-form-field appearance="outline" subscriptSizing="dynamic">
-          <mat-label>Email</mat-label>
+          <mat-label>base</mat-label>
           <input matInput />
         </mat-form-field>
       </div>
