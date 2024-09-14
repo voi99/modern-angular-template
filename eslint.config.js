@@ -20,7 +20,6 @@ module.exports = [
           "error",
           {
             type: "attribute",
-            prefix: "",
             style: "camelCase",
           },
         ],
@@ -28,7 +27,6 @@ module.exports = [
           "error",
           {
             type: "element",
-            prefix: "app",
             style: "kebab-case",
           },
         ],
@@ -45,6 +43,7 @@ module.exports = [
           },
         ],
         "@angular-eslint/template/prefer-self-closing-tags": "error",
+        "@angular-eslint/template/prefer-control-flow": "error",
       },
     }
   ),

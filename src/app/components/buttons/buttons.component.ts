@@ -14,7 +14,7 @@ import { CardComponent } from "../card/card.component";
           <button mat-flat-button class="mat-small mat-error">small error</button>
           <button mat-flat-button class="mat-medium">medium default</button>
           <button mat-flat-button class="mat-secondary">base secondary</button>
-          <button mat-flat-button class="mat-tonal">base mat-tonal</button>
+          <button mat-flat-button class="mat-tonal">base tonal</button>
         </div>
       </div>
     </app-card>
