@@ -13,10 +13,10 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
   imports: [MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule, FormValidation],
   template: `
     <app-card cardTitle="Dynamic form validation messages">
-      <div class="grid md:grid-cols-2 gap-4">
+      <div class="grid gap-4 md:grid-cols-2">
         <div>
           <p>On Touched Error Matcher (Default)</p>
-          <form [formGroup]="onTouchedForm" class="flex gap-2 flex-col items-start w-full">
+          <form [formGroup]="onTouchedForm" class="flex w-full flex-col items-start gap-2">
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Email</mat-label>
               <input matInput formControlName="email" />
@@ -32,7 +32,7 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
         </div>
         <div>
           <p>On Submit Error Matcher</p>
-          <form [formGroup]="onSubmitForm" class="flex gap-2 flex-col items-start w-full">
+          <form [formGroup]="onSubmitForm" class="flex w-full flex-col items-start gap-2">
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Username</mat-label>
               <input matInput formControlName="username" [errorStateMatcher]="onSubmitErrorStateMatcher" />

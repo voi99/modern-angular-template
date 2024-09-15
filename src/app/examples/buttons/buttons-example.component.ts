@@ -9,7 +9,7 @@ import { CardComponent } from "../card/card.component";
   template: `
     <app-card cardTitle="Buttons">
       <div class="flex flex-col gap-4">
-        <div class="flex gap-2 flex-wrap items-center">
+        <div class="flex flex-wrap items-center gap-2">
           <button mat-flat-button class="mat-xs mat-tertiary">xs tertiary</button>
           <button mat-flat-button class="mat-small mat-error">small error</button>
           <button mat-flat-button class="mat-medium">medium default</button>

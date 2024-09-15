@@ -8,8 +8,8 @@ import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/t
   standalone: true,
   imports: [ButtonsExampleComponent, TailwindMaterialExampleComponent, FormValidationExampleComponent],
   template: `
-    <div class="bg-surface-container p-4 min-h-full">
-      <div class="flex flex-col gap-4 max-w-screen-lg mx-auto">
+    <div class="min-h-full bg-surface-container p-4">
+      <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
         @defer {
           <app-tailwind-material-example />
         }
