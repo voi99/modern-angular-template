@@ -8,7 +8,7 @@ import { MatButton } from "@angular/material/button";
 import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-state-matchers";
 
 @Component({
-  selector: "app-dynamic-form-field-error-messages",
+  selector: "app-form-validation-example",
   standalone: true,
   imports: [MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule, FormValidation],
   template: `
@@ -55,7 +55,7 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DynamicFormValidationMessagesComponent {
+export class FormValidationExampleComponent {
   private fb = inject(FormBuilder);
 
   /**

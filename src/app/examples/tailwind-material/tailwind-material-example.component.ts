@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CardComponent } from "../card/card.component";
 
 @Component({
-  selector: "app-tw-mat-integration",
+  selector: "app-tailwind-material-example",
   standalone: true,
   imports: [CardComponent],
   template: `
@@ -57,4 +57,4 @@ import { CardComponent } from "../card/card.component";
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TwMatIntegrationComponent {}
+export class TailwindMaterialExampleComponent {}

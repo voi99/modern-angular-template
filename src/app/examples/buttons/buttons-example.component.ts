@@ -3,7 +3,7 @@ import { MatButton } from "@angular/material/button";
 import { CardComponent } from "../card/card.component";
 
 @Component({
-  selector: "app-buttons",
+  selector: "app-buttons-example",
   standalone: true,
   imports: [MatButton, CardComponent],
   template: `
@@ -21,4 +21,4 @@ import { CardComponent } from "../card/card.component";
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ButtonsComponent {}
+export class ButtonsExampleComponent {}
