@@ -2,12 +2,12 @@ import { InjectionToken } from "@angular/core";
 import { FormErrorMessages } from "./types";
 
 export const DEFAULT_FORM_ERROR_MESSAGES: FormErrorMessages = {
-  required: () => "This field is required!",
-  email: () => "Please provide a valid email address!",
+  required: () => "This field is required",
+  email: () => "Please provide a valid email address",
   minlength: ({ requiredLength, actualLength }) =>
-    `Please enter at least ${requiredLength} characters (you have entered ${actualLength})!`,
+    `Minimum length is ${requiredLength} characters, you have entered ${actualLength}`,
   maxlength: ({ requiredLength, actualLength }) =>
-    `Please enter no more than ${requiredLength} characters (you have entered ${actualLength})!`,
+    `Maximum length is ${requiredLength} characters, you have entered ${actualLength}`,
   min: ({ min }) => `The value must be ${min} or greater!`,
   max: ({ max }) => `The value must be ${max} or less!`,
 };

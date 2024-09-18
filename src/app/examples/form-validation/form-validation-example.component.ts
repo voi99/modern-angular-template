@@ -71,6 +71,6 @@ export class FormValidationExampleComponent {
 
   onSubmitForm = this.fb.nonNullable.group({
     username: ["", { validators: [Validators.required, Validators.minLength(5)] }],
-    password: ["", Validators.required],
+    password: ["", { validators: [Validators.required, Validators.maxLength(20)] }],
   });
 }
