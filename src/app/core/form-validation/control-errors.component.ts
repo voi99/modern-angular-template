@@ -11,20 +11,20 @@ import {
 } from "@angular/forms";
 import { MatFormField } from "@angular/material/form-field";
 import { EMPTY, filter, iif, merge, Observable } from "rxjs";
-import { ERROR_MESSAGES } from "./error-messages.token";
+import { FORM_ERROR_MESSAGES } from "./form-error-messages.token";
 
 @Component({
-  selector: "mat-error",
+  selector: "mat-error[control-errors]",
   template: ` {{ errorMessage() }} `,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ErrorMessageComponent implements AfterViewInit {
+export class ControlErrorsComponent implements AfterViewInit {
   private readonly matFormField = inject(MatFormField);
   private readonly destroyRef = inject(DestroyRef);
   private readonly controlContainer = inject(ControlContainer, { optional: true });
 
-  readonly errorMessages = input(inject(ERROR_MESSAGES));
+  readonly errorMessages = input(inject(FORM_ERROR_MESSAGES));
 
   errorMessage = signal<string | null>(null);
 

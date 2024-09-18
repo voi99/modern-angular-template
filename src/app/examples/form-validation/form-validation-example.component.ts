@@ -3,29 +3,29 @@ import { MatFormField, MatLabel } from "@angular/material/form-field";
 import { MatInput } from "@angular/material/input";
 import { CardComponent } from "../card/card.component";
 import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
-import { FormValidation } from "src/app/core/form-validation";
 import { MatButton } from "@angular/material/button";
 import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-state-matchers";
+import { ControlErrors } from "@form-validation/control-errors";
 
 @Component({
   selector: "app-form-validation-example",
   standalone: true,
-  imports: [MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule, FormValidation],
+  imports: [MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule, ControlErrors],
   template: `
-    <app-card cardTitle="Dynamic form validation messages">
+    <app-card cardTitle="Dynamic Form Validation Messages">
       <div class="grid gap-4 md:grid-cols-2">
         <div>
-          <p>On Touched Error Matcher (Default)</p>
+          <p>On Touched Error Matcher (default)</p>
           <form [formGroup]="onTouchedForm" class="flex w-full flex-col items-start gap-2">
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Email</mat-label>
               <input matInput formControlName="email" />
-              <mat-error />
+              <mat-error control-errors />
             </mat-form-field>
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Password</mat-label>
               <input matInput formControlName="password" type="password" />
-              <mat-error />
+              <mat-error control-errors />
             </mat-form-field>
             <button mat-button>Submit</button>
           </form>
@@ -36,7 +36,7 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Username</mat-label>
               <input matInput formControlName="username" [errorStateMatcher]="onSubmitErrorStateMatcher" />
-              <mat-error />
+              <mat-error control-errors />
             </mat-form-field>
             <mat-form-field appearance="outline" class="mat-small w-full">
               <mat-label>Password</mat-label>
@@ -45,7 +45,7 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
                 formControlName="password"
                 [errorStateMatcher]="onSubmitErrorStateMatcher"
                 type="password" />
-              <mat-error />
+              <mat-error control-errors />
             </mat-form-field>
             <button mat-button>Submit</button>
           </form>

@@ -1,2 +1,2 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export type ErrorMessages = Record<string, (args?: any) => string>;
+export type FormErrorMessages = Record<string, (args?: any) => string>;

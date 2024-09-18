@@ -1,7 +1,7 @@
 import { InjectionToken } from "@angular/core";
-import { ErrorMessages } from "./types";
+import { FormErrorMessages } from "./types";
 
-export const DEFAULT_ERROR_MESSAGES: ErrorMessages = {
+export const DEFAULT_FORM_ERROR_MESSAGES: FormErrorMessages = {
   required: () => "This field is required!",
   email: () => "Please provide a valid email address!",
   minlength: ({ requiredLength, actualLength }) =>
@@ -12,7 +12,7 @@ export const DEFAULT_ERROR_MESSAGES: ErrorMessages = {
   max: ({ max }) => `The value must be ${max} or less!`,
 };
 
-export const ERROR_MESSAGES = new InjectionToken("FORM_VALIDATION_ERROR_MESSAGES", {
+export const FORM_ERROR_MESSAGES = new InjectionToken("FORM_ERROR_MESSAGES", {
   providedIn: "root",
-  factory: () => DEFAULT_ERROR_MESSAGES,
+  factory: () => DEFAULT_FORM_ERROR_MESSAGES,
 });
