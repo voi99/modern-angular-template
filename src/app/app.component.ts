@@ -11,13 +11,13 @@ import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/t
     <div class="min-h-full bg-surface-container p-4">
       <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
         @defer {
-          <app-tailwind-material-example />
+          <tailwind-material-example />
         }
         @defer {
-          <app-form-validation-example />
+          <form-validation-example />
         }
         @defer {
-          <app-buttons-example />
+          <buttons-example />
         }
       </div>
     </div>

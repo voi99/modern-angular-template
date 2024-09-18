@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CardComponent } from "../card/card.component";
 
 @Component({
-  selector: "app-tailwind-material-example",
+  selector: "tailwind-material-example",
   standalone: true,
   imports: [CardComponent],
   template: `
-    <app-card cardTitle="Tailwind - Material Integration">
+    <card cardTitle="Tailwind - Material Integration">
       <div class="grid gap-2 md:grid-cols-2">
         <div class="tw-mat-tile bg-primary text-on-primary">
           <p>bg-primary</p>
@@ -44,7 +44,7 @@ import { CardComponent } from "../card/card.component";
           <p>text-on-error-container</p>
         </div>
       </div>
-    </app-card>
+    </card>
   `,
   styles: `
     .tw-mat-tile {

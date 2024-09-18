@@ -8,11 +8,11 @@ import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-st
 import { ControlErrors } from "@form-validation/control-errors";
 
 @Component({
-  selector: "app-form-validation-example",
+  selector: "form-validation-example",
   standalone: true,
-  imports: [MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule, ControlErrors],
+  imports: [ControlErrors, MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule],
   template: `
-    <app-card cardTitle="Dynamic Form Validation Messages">
+    <card cardTitle="Dynamic Form Validation Messages">
       <div class="grid gap-4 md:grid-cols-2">
         <div>
           <p>On Touched Error Matcher (default)</p>
@@ -51,7 +51,7 @@ import { ControlErrors } from "@form-validation/control-errors";
           </form>
         </div>
       </div>
-    </app-card>
+    </card>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

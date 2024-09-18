@@ -3,11 +3,11 @@ import { MatButton } from "@angular/material/button";
 import { CardComponent } from "../card/card.component";
 
 @Component({
-  selector: "app-buttons-example",
+  selector: "buttons-example",
   standalone: true,
   imports: [MatButton, CardComponent],
   template: `
-    <app-card cardTitle="Buttons">
+    <card cardTitle="Buttons">
       <div class="flex flex-col gap-4">
         <div class="flex flex-wrap items-center gap-2">
           <button mat-flat-button class="mat-xs mat-tertiary">xs tertiary</button>
@@ -17,7 +17,7 @@ import { CardComponent } from "../card/card.component";
           <button mat-flat-button class="mat-tonal">base tonal</button>
         </div>
       </div>
-    </app-card>
+    </card>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
