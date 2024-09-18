@@ -6,4 +6,4 @@ import { ControlErrorsComponent } from "./control-errors.component";
   imports: [MatError, ControlErrorsComponent],
   exports: [MatError, ControlErrorsComponent],
 })
-export class ControlErrors {}
+export class ControlFormErrors {}

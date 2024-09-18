@@ -5,12 +5,12 @@ import { CardComponent } from "../card/card.component";
 import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
 import { MatButton } from "@angular/material/button";
 import { OnSubmitErrorStateMatcher } from "src/app/core/form-validation/error-state-matchers";
-import { ControlErrors } from "@form-validation/control-errors";
+import { ControlFormErrors } from "@form-validation/control-form-errors";
 
 @Component({
   selector: "form-validation-example",
   standalone: true,
-  imports: [ControlErrors, MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule],
+  imports: [ControlFormErrors, MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule],
   template: `
     <card cardTitle="Dynamic Form Validation Messages">
       <div class="grid gap-4 md:grid-cols-2">
