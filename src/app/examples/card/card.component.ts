@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 import { MatCard, MatCardHeader, MatCardTitle, MatCardContent } from "@angular/material/card";
 
 @Component({
-  selector: "app-card",
+  selector: "card",
   standalone: true,
   imports: [MatCard, MatCardHeader, MatCardTitle, MatCardContent],
   template: `

@@ -2,53 +2,53 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CardComponent } from "../card/card.component";
 
 @Component({
-  selector: "app-tw-mat-integration",
+  selector: "tailwind-material-example",
   standalone: true,
   imports: [CardComponent],
   template: `
-    <app-card cardTitle="Tailwind - Material Integration">
-      <div class="grid md:grid-cols-2 gap-2">
-        <div class="bg-primary text-on-primary tw-mat-tile">
+    <card cardTitle="Tailwind - Material Integration">
+      <div class="grid gap-2 md:grid-cols-2">
+        <div class="tw-mat-tile bg-primary text-on-primary">
           <p>bg-primary</p>
           <p>text-on-primary</p>
         </div>
-        <div class="bg-primary-container text-on-primary-container tw-mat-tile">
+        <div class="tw-mat-tile bg-primary-container text-on-primary-container">
           <p>bg-primary-container</p>
           <p>text-on-primary-container</p>
         </div>
 
-        <div class="bg-secondary text-on-primary tw-mat-tile">
+        <div class="tw-mat-tile bg-secondary text-on-primary">
           <p>bg-secondary</p>
           <p>text-on-secondary</p>
         </div>
-        <div class="bg-secondary-container text-on-secondary-container tw-mat-tile">
+        <div class="tw-mat-tile bg-secondary-container text-on-secondary-container">
           <p>bg-secondary-container</p>
           <p>text-on-secondary-container</p>
         </div>
 
-        <div class="bg-tertiary text-on-tertiary tw-mat-tile">
+        <div class="tw-mat-tile bg-tertiary text-on-tertiary">
           <p>bg-tertiary</p>
           <p>text-on-tertiary</p>
         </div>
-        <div class="bg-tertiary-container text-on-tertiary-container tw-mat-tile">
+        <div class="tw-mat-tile bg-tertiary-container text-on-tertiary-container">
           <p>bg-tertiary-container</p>
           <p>text-on-tertiary-container</p>
         </div>
 
-        <div class="bg-error text-on-error tw-mat-tile">
+        <div class="tw-mat-tile bg-error text-on-error">
           <p>bg-error</p>
           <p>text-on-error</p>
         </div>
-        <div class="bg-error-container text-on-error-container tw-mat-tile">
+        <div class="tw-mat-tile bg-error-container text-on-error-container">
           <p>bg-error-container</p>
           <p>text-on-error-container</p>
         </div>
       </div>
-    </app-card>
+    </card>
   `,
   styles: `
     .tw-mat-tile {
-      @apply rounded-xl p-4 flex items-center justify-center flex-col;
+      @apply flex flex-col items-center justify-center rounded-xl p-4;
 
       p {
         margin: 0;
@@ -57,4 +57,4 @@ import { CardComponent } from "../card/card.component";
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TwMatIntegrationComponent {}
+export class TailwindMaterialExampleComponent {}

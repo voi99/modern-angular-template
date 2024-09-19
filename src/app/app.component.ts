@@ -1,23 +1,23 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { ButtonsComponent } from "./components/buttons/buttons.component";
-import { FormFieldsComponent } from "./components/form-fields/form-fields.component";
-import { TwMatIntegrationComponent } from "./components/tw-mat-integration/tw-mat-integration.component";
+import { ButtonsExampleComponent } from "./examples/buttons/buttons-example.component";
+import { FormValidationExampleComponent } from "./examples/form-validation/form-validation-example.component";
+import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/tailwind-material-example.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [ButtonsComponent, FormFieldsComponent, TwMatIntegrationComponent],
+  imports: [ButtonsExampleComponent, TailwindMaterialExampleComponent, FormValidationExampleComponent],
   template: `
-    <div class="bg-surface-container p-4 min-h-full">
-      <div class="flex flex-col gap-4 max-w-screen-lg mx-auto">
+    <div class="min-h-full bg-surface-container p-4">
+      <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
         @defer {
-          <app-tw-mat-integration />
+          <tailwind-material-example />
         }
         @defer {
-          <app-buttons />
+          <form-validation-example />
         }
         @defer {
-          <app-form-fields />
+          <buttons-example />
         }
       </div>
     </div>
