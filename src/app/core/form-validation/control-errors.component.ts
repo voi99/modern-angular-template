@@ -28,12 +28,6 @@ export class ControlErrorsComponent implements AfterViewInit {
 
   errorMessage = signal<string | null>(null);
 
-  /**
-   * @warning This code accesses the private `_control` property of `MatFormField`.
-   * It is not part of the public API and may be removed or altered in future versions
-   * (potentially switched to native JavaScript private fields).
-   * This could result in breaking changes.
-   */
   get control() {
     return this.matFormField?._control?.ngControl?.control as AbstractControl;
   }
