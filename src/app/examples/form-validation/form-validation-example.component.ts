@@ -9,7 +9,6 @@ import { ControlFormErrors } from "@form-validation/control-form-errors";
 
 @Component({
   selector: "form-validation-example",
-  standalone: true,
   imports: [ControlFormErrors, MatFormField, MatButton, MatLabel, MatInput, CardComponent, ReactiveFormsModule],
   template: `
     <card cardTitle="Dynamic Form Validation Messages">

@@ -5,7 +5,6 @@ import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/t
 
 @Component({
   selector: "app-root",
-  standalone: true,
   imports: [ButtonsExampleComponent, TailwindMaterialExampleComponent, FormValidationExampleComponent],
   template: `
     <div class="min-h-full bg-surface-container p-4">

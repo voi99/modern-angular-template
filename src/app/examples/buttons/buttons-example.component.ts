@@ -4,7 +4,6 @@ import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: "buttons-example",
-  standalone: true,
   imports: [MatButton, CardComponent],
   template: `
     <card cardTitle="Buttons">
