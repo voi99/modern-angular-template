@@ -48,7 +48,7 @@ body {
 
 body {
   margin: 0;
-  font-family: (--readex-font-family);
+  font-family: var(--readex-font-family);
 }
 
 * {
