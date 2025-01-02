@@ -11,12 +11,18 @@ import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/t
       <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
         @defer {
           <tailwind-material-example />
+        } @placeholder {
+          <div class="h-96 animate-pulse rounded-xl bg-surface-dim"></div>
         }
         @defer {
           <form-validation-example />
+        } @placeholder {
+          <div class="h-96 animate-pulse rounded-xl bg-surface-dim"></div>
         }
         @defer {
           <buttons-example />
+        } @placeholder {
+          <div class="h-28 animate-pulse rounded-xl bg-surface-dim"></div>
         }
       </div>
     </div>
