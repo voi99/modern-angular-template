@@ -16,12 +16,12 @@ import { ControlFormErrors } from "@form-validation/control-form-errors";
         <div>
           <p>On Touched Error Matcher (default)</p>
           <form [formGroup]="onTouchedForm" class="flex w-full flex-col items-start gap-2">
-            <mat-form-field appearance="outline" class="mat-small w-full">
+            <mat-form-field appearance="outline" class="mat-sm w-full">
               <mat-label>Email</mat-label>
               <input matInput formControlName="email" />
               <mat-error control-errors />
             </mat-form-field>
-            <mat-form-field appearance="outline" class="mat-small w-full">
+            <mat-form-field appearance="outline" class="mat-sm w-full">
               <mat-label>Password</mat-label>
               <input matInput formControlName="password" type="password" />
               <mat-error control-errors />
@@ -32,12 +32,12 @@ import { ControlFormErrors } from "@form-validation/control-form-errors";
         <div>
           <p>On Submit Error Matcher</p>
           <form [formGroup]="onSubmitForm" class="flex w-full flex-col items-start gap-2">
-            <mat-form-field appearance="outline" class="mat-small w-full">
+            <mat-form-field appearance="outline" class="mat-sm w-full">
               <mat-label>Username</mat-label>
               <input matInput formControlName="username" [errorStateMatcher]="onSubmitErrorStateMatcher" />
               <mat-error control-errors />
             </mat-form-field>
-            <mat-form-field appearance="outline" class="mat-small w-full">
+            <mat-form-field appearance="outline" class="mat-sm w-full">
               <mat-label>Password</mat-label>
               <input
                 matInput

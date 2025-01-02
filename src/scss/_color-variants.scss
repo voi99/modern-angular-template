@@ -1,0 +1,40 @@
+@use "@angular/material" as mat;
+@use "theme-colors";
+
+@mixin color-variants() {
+  .mat-primary {
+    @include mat.theme(
+      (
+        color: theme-colors.$primary-palette,
+      )
+    );
+  }
+
+  .mat-secondary {
+    @include mat.theme(
+      (
+        color: theme-colors.$secondary-palette,
+      )
+    );
+  }
+
+  .mat-tertiary {
+    @include mat.theme(
+      (
+        color: theme-colors.$tertiary-palette,
+      )
+    );
+  }
+
+  .mat-error {
+    @include mat.theme(
+      (
+        color: theme-colors.$error-palette,
+      )
+    );
+  }
+}
+
+:root {
+  @include color-variants();
+}
