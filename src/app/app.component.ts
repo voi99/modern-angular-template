@@ -2,10 +2,16 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ButtonsExampleComponent } from "./examples/buttons/buttons-example.component";
 import { FormValidationExampleComponent } from "./examples/form-validation/form-validation-example.component";
 import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/tailwind-material-example.component";
+import { IconsExampleComponent } from "./examples/icons/icons-example.component";
 
 @Component({
   selector: "app-root",
-  imports: [ButtonsExampleComponent, TailwindMaterialExampleComponent, FormValidationExampleComponent],
+  imports: [
+    ButtonsExampleComponent,
+    TailwindMaterialExampleComponent,
+    FormValidationExampleComponent,
+    IconsExampleComponent,
+  ],
   template: `
     <div class="min-h-full bg-surface-container p-4">
       <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
@@ -21,6 +27,11 @@ import { TailwindMaterialExampleComponent } from "./examples/tailwind-material/t
         }
         @defer {
           <buttons-example />
+        } @placeholder {
+          <div class="h-52 animate-pulse rounded-xl bg-surface-dim md:h-28"></div>
+        }
+        @defer {
+          <icons-example />
         } @placeholder {
           <div class="h-52 animate-pulse rounded-xl bg-surface-dim md:h-28"></div>
         }

@@ -1,40 +1,50 @@
 @use "@angular/material" as mat;
 @use "theme-colors";
 
-@mixin color-variants() {
-  .mat-primary {
-    @include mat.theme(
-      (
-        color: theme-colors.$primary-palette,
-      )
-    );
-  }
+.mat-primary {
+  @include mat.theme(
+    (
+      color: theme-colors.$primary-palette,
+    )
+  );
 
-  .mat-secondary {
-    @include mat.theme(
-      (
-        color: theme-colors.$secondary-palette,
-      )
-    );
-  }
-
-  .mat-tertiary {
-    @include mat.theme(
-      (
-        color: theme-colors.$tertiary-palette,
-      )
-    );
-  }
-
-  .mat-error {
-    @include mat.theme(
-      (
-        color: theme-colors.$error-palette,
-      )
-    );
+  &.mat-icon {
+    --mat-icon-color: var(--mat-sys-primary);
   }
 }
 
-:root {
-  @include color-variants();
+.mat-secondary {
+  @include mat.theme(
+    (
+      color: theme-colors.$secondary-palette,
+    )
+  );
+
+  &.mat-icon {
+    --mat-icon-color: var(--mat-sys-primary);
+  }
+}
+
+.mat-tertiary {
+  @include mat.theme(
+    (
+      color: theme-colors.$tertiary-palette,
+    )
+  );
+
+  &.mat-icon {
+    --mat-icon-color: var(--mat-sys-primary);
+  }
+}
+
+.mat-error {
+  @include mat.theme(
+    (
+      color: theme-colors.$error-palette,
+    )
+  );
+
+  &.mat-icon {
+    --mat-icon-color: var(--mat-sys-primary);
+  }
 }

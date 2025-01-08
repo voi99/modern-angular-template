@@ -7,14 +7,12 @@ import { CardComponent } from "../card/card.component";
   imports: [MatButton, CardComponent],
   template: `
     <card cardTitle="Buttons">
-      <div class="flex flex-col gap-4">
-        <div class="flex flex-wrap items-center gap-2">
-          <button mat-flat-button class="mat-xs mat-tertiary">xs tertiary</button>
-          <button mat-flat-button class="mat-sm mat-error">small error</button>
-          <button mat-flat-button class="mat-md">medium default</button>
-          <button mat-flat-button class="mat-secondary">base secondary</button>
-          <button mat-flat-button class="mat-tonal">base tonal</button>
-        </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <button mat-flat-button class="mat-xs mat-error">mat-error</button>
+        <button mat-flat-button class="mat-sm mat-tertiary">mat-tertiary</button>
+        <button mat-flat-button class="mat-md">default</button>
+        <button mat-flat-button class="mat-secondary">mat-secondary</button>
+        <button mat-flat-button class="mat-tonal">mat-tonal</button>
       </div>
     </card>
   `,
