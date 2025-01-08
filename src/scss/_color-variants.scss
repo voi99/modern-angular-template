@@ -1,8 +1,13 @@
 @use "@angular/material" as mat;
 @use "theme-colors";
 
-// mixin for common icon and button styles
-@mixin component-overrides {
+@mixin themed-components($theme) {
+  @include mat.theme(
+    (
+      color: $theme,
+    )
+  );
+
   &.mat-icon {
     @include mat.icon-overrides(
       (
@@ -22,41 +27,17 @@
 }
 
 .mat-primary {
-  @include mat.theme(
-    (
-      color: theme-colors.$primary-palette,
-    )
-  );
-
-  @include component-overrides;
+  @include themed-components(theme-colors.$primary-palette);
 }
 
 .mat-secondary {
-  @include mat.theme(
-    (
-      color: theme-colors.$secondary-palette,
-    )
-  );
-
-  @include component-overrides;
+  @include themed-components(theme-colors.$secondary-palette);
 }
 
 .mat-tertiary {
-  @include mat.theme(
-    (
-      color: theme-colors.$tertiary-palette,
-    )
-  );
-
-  @include component-overrides;
+  @include themed-components(theme-colors.$tertiary-palette);
 }
 
 .mat-error {
-  @include mat.theme(
-    (
-      color: theme-colors.$error-palette,
-    )
-  );
-
-  @include component-overrides;
+  @include themed-components(theme-colors.$error-palette);
 }
