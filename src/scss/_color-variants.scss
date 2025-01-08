@@ -1,6 +1,26 @@
 @use "@angular/material" as mat;
 @use "theme-colors";
 
+// mixin for common icon and button styles
+@mixin component-overrides {
+  &.mat-icon {
+    @include mat.icon-overrides(
+      (
+        color: var(--mat-sys-primary),
+      )
+    );
+  }
+
+  &.mat-mdc-icon-button {
+    @include mat.icon-button-overrides(
+      (
+        icon-color: var(--mat-sys-primary),
+        state-layer-color: var(--mat-sys-primary),
+      )
+    );
+  }
+}
+
 .mat-primary {
   @include mat.theme(
     (
@@ -8,9 +28,7 @@
     )
   );
 
-  &.mat-icon {
-    --mat-icon-color: var(--mat-sys-primary);
-  }
+  @include component-overrides;
 }
 
 .mat-secondary {
@@ -20,9 +38,7 @@
     )
   );
 
-  &.mat-icon {
-    --mat-icon-color: var(--mat-sys-primary);
-  }
+  @include component-overrides;
 }
 
 .mat-tertiary {
@@ -32,9 +48,7 @@
     )
   );
 
-  &.mat-icon {
-    --mat-icon-color: var(--mat-sys-primary);
-  }
+  @include component-overrides;
 }
 
 .mat-error {
@@ -44,7 +58,5 @@
     )
   );
 
-  &.mat-icon {
-    --mat-icon-color: var(--mat-sys-primary);
-  }
+  @include component-overrides;
 }
