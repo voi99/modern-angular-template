@@ -16,19 +16,19 @@ import { MatIcon } from "@angular/material/icon";
         <button mat-flat-button class="mat-tonal">mat-tonal</button>
       </div>
       <div class="mt-2 flex flex-wrap items-center gap-2">
-        <button mat-icon-button>
+        <button mat-icon-button aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-primary">
+        <button mat-icon-button class="mat-primary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-secondary">
+        <button mat-icon-button class="mat-secondary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-tertiary">
+        <button mat-icon-button class="mat-tertiary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-error">
+        <button mat-icon-button class="mat-error" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
       </div>
