@@ -1,5 +1,7 @@
 # Modern Angular Template
 
+### Angular v19
+
 This repository serves as a template for creating a new modern Angular project. Follow the instructions below to set up your project.
 
 - Zoneless by default (start the setup from the `with-zone` branch if you would like to use `zone.js`)

@@ -3,7 +3,6 @@ import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: "tailwind-material-example",
-  standalone: true,
   imports: [CardComponent],
   template: `
     <card cardTitle="Tailwind - Material Integration">

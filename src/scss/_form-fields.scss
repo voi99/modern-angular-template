@@ -1,17 +1,15 @@
 @use "@angular/material" as mat;
 
-@mixin sizes($theme) {
-  .mat-mdc-form-field {
-    &.mat-xs {
-      @include mat.form-field-density(-3);
-    }
+mat-form-field.mat-mdc-form-field {
+  &.mat-xs {
+    @include mat.form-field-density(-3);
+  }
 
-    &.mat-small {
-      @include mat.form-field-density(-2);
-    }
+  &.mat-sm {
+    @include mat.form-field-density(-2);
+  }
 
-    &.mat-medium {
-      @include mat.form-field-density(-1);
-    }
+  &.mat-md {
+    @include mat.form-field-density(-1);
   }
 }

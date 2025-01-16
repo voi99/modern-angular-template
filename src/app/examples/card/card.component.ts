@@ -3,7 +3,6 @@ import { MatCard, MatCardHeader, MatCardTitle, MatCardContent } from "@angular/m
 
 @Component({
   selector: "card",
-  standalone: true,
   imports: [MatCard, MatCardHeader, MatCardTitle, MatCardContent],
   template: `
     <mat-card appearance="outlined">

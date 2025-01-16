@@ -1,42 +1,28 @@
 @use "@angular/material" as mat;
 
-@mixin color-variants($theme) {
-  .mdc-button {
-    &.mat-secondary {
-      @include mat.button-color($theme, $color-variant: secondary);
-    }
+button.mdc-button,
+a.mdc-button {
+  &.mat-tonal {
+    background-color: var(--mat-sys-secondary-container);
+    color: var(--mat-sys-on-secondary-container);
 
-    &.mat-tertiary {
-      @include mat.button-color($theme, $color-variant: tertiary);
-    }
-
-    &.mat-error {
-      @include mat.button-color($theme, $color-variant: error);
-    }
-
-    &.mat-tonal {
-      background-color: mat.get-theme-color($theme, secondary-container);
-      color: mat.get-theme-color($theme, on-secondary-container);
-
-      &:hover {
-        box-shadow: var(--mat-app-elevation-shadow-level-1);
-      }
+    &:hover {
+      box-shadow: var(--mat-sys-level1);
     }
   }
 }
 
-@mixin sizes($theme) {
-  .mdc-button {
-    &.mat-xs {
-      @include mat.button-density(-3);
-    }
+button.mdc-button,
+a.mdc-button {
+  &.mat-xs {
+    @include mat.button-density(-3);
+  }
 
-    &.mat-small {
-      @include mat.button-density(-2);
-    }
+  &.mat-sm {
+    @include mat.button-density(-2);
+  }
 
-    &.mat-medium {
-      @include mat.button-density(-1);
-    }
+  &.mat-md {
+    @include mat.button-density(-1);
   }
 }

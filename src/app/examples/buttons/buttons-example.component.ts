@@ -1,21 +1,36 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { MatButton } from "@angular/material/button";
+import { MatButton, MatIconButton } from "@angular/material/button";
 import { CardComponent } from "../card/card.component";
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: "buttons-example",
-  standalone: true,
-  imports: [MatButton, CardComponent],
+  imports: [MatButton, CardComponent, MatIconButton, MatIcon],
   template: `
     <card cardTitle="Buttons">
-      <div class="flex flex-col gap-4">
-        <div class="flex flex-wrap items-center gap-2">
-          <button mat-flat-button class="mat-xs mat-tertiary">xs tertiary</button>
-          <button mat-flat-button class="mat-small mat-error">small error</button>
-          <button mat-flat-button class="mat-medium">medium default</button>
-          <button mat-flat-button class="mat-secondary">base secondary</button>
-          <button mat-flat-button class="mat-tonal">base tonal</button>
-        </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <button mat-flat-button class="mat-xs mat-error">mat-error</button>
+        <button mat-flat-button class="mat-sm mat-tertiary">mat-tertiary</button>
+        <button mat-flat-button class="mat-md">default</button>
+        <button mat-flat-button class="mat-secondary">mat-secondary</button>
+        <button mat-flat-button class="mat-tonal">mat-tonal</button>
+      </div>
+      <div class="mt-2 flex flex-wrap items-center gap-2">
+        <button mat-icon-button aria-label="Settings">
+          <mat-icon>settings</mat-icon>
+        </button>
+        <button mat-icon-button class="mat-primary" aria-label="Settings">
+          <mat-icon>settings</mat-icon>
+        </button>
+        <button mat-icon-button class="mat-secondary" aria-label="Settings">
+          <mat-icon>settings</mat-icon>
+        </button>
+        <button mat-icon-button class="mat-tertiary" aria-label="Settings">
+          <mat-icon>settings</mat-icon>
+        </button>
+        <button mat-icon-button class="mat-error" aria-label="Settings">
+          <mat-icon>settings</mat-icon>
+        </button>
       </div>
     </card>
   `,

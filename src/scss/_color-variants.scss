@@ -1,0 +1,43 @@
+@use "@angular/material" as mat;
+@use "theme-colors";
+
+@mixin themed-components($theme) {
+  @include mat.theme(
+    (
+      color: $theme,
+    )
+  );
+
+  &.mat-icon {
+    @include mat.icon-overrides(
+      (
+        color: var(--mat-sys-primary),
+      )
+    );
+  }
+
+  &.mat-mdc-icon-button {
+    @include mat.icon-button-overrides(
+      (
+        icon-color: var(--mat-sys-primary),
+        state-layer-color: var(--mat-sys-primary),
+      )
+    );
+  }
+}
+
+.mat-primary {
+  @include themed-components(theme-colors.$primary-palette);
+}
+
+.mat-secondary {
+  @include themed-components(theme-colors.$secondary-palette);
+}
+
+.mat-tertiary {
+  @include themed-components(theme-colors.$tertiary-palette);
+}
+
+.mat-error {
+  @include themed-components(theme-colors.$error-palette);
+}

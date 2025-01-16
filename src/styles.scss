@@ -1,41 +1,35 @@
 @use "@angular/material" as mat;
 
-@use "m3-theme" as m3;
-@use "colors";
+@use "theme-colors";
 @use "buttons";
-@use "icon-buttons";
-@use "icons";
 @use "form-fields";
-@use "fab";
-@use "chips";
+@use "color-variants";
+@use "typography";
 
-@include mat.core();
-
-@mixin apply-theme-styles($theme) {
-  @include colors.theme-colors($theme);
-  @include buttons.color-variants($theme);
-  @include icon-buttons.color-variants($theme);
-  @include icons.color-variants($theme);
-  @include fab.color-variants($theme);
-  @include chips.color-variants($theme);
-}
+@include mat.elevation-classes();
+@include mat.app-background();
 
 :root {
+  color-scheme: light;
   --readex-font-family: "Readex Pro", sans-serif;
 
-  @include mat.all-component-themes(m3.$light-theme);
-  @include apply-theme-styles(m3.$light-theme);
-
-  @include buttons.sizes(m3.$light-theme);
-  @include form-fields.sizes(m3.$light-theme);
+  @include mat.theme(
+    (
+      color: (
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette,
+      ),
+      typography: (
+        brand-family: var(--readex-font-family),
+        plain-family: var(--readex-font-family),
+      ),
+    )
+  );
 }
 
 .dark {
-  @include mat.all-component-colors(m3.$dark-theme);
-  @include apply-theme-styles(m3.$dark-theme);
+  color-scheme: dark;
 }
-
-@include mat.typography-hierarchy(m3.$light-theme);
 
 @tailwind base;
 @tailwind utilities;
@@ -47,7 +41,7 @@ body {
 
 body {
   margin: 0;
-  font-family: (--readex-font-family);
+  font-family: var(--readex-font-family);
 }
 
 * {
