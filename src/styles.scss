@@ -16,7 +16,6 @@
   @include mat.theme(
     (
       color: (
-        theme-type: light,
         primary: theme-colors.$primary-palette,
         tertiary: theme-colors.$tertiary-palette,
       ),
