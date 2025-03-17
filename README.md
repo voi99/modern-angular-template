@@ -6,7 +6,7 @@ This repository serves as a template for creating a new modern Angular project. 
 
 - Zoneless by default (start the setup from the `with-zone` branch if you would like to use `zone.js`)
 - Material 3 (custom theme, components color variants and sizes)
-- Tailwind (Integration with Material)
+- Tailwind v4 (Integration with Material)
 - Dynamic form error messages
 - Bun package manager
 - Eslint (new flat config) & Prettier
