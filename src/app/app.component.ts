@@ -13,27 +13,27 @@ import { IconsExampleComponent } from "./examples/icons/icons-example.component"
     IconsExampleComponent,
   ],
   template: `
-    <div class="min-h-full bg-surface-container p-4">
+    <div class="bg-surface-container min-h-full p-4">
       <div class="mx-auto flex max-w-screen-lg flex-col gap-4">
         @defer {
           <tailwind-material-example />
         } @placeholder {
-          <div class="h-[700px] animate-pulse rounded-xl bg-surface-dim md:h-96"></div>
+          <div class="bg-surface-dim h-[700px] animate-pulse rounded-xl md:h-96"></div>
         }
         @defer {
           <form-validation-example />
         } @placeholder {
-          <div class="h-[600px] animate-pulse rounded-xl bg-surface-dim md:h-80"></div>
+          <div class="bg-surface-dim h-[600px] animate-pulse rounded-xl md:h-80"></div>
         }
         @defer {
           <buttons-example />
         } @placeholder {
-          <div class="h-52 animate-pulse rounded-xl bg-surface-dim md:h-28"></div>
+          <div class="bg-surface-dim h-52 animate-pulse rounded-xl md:h-28"></div>
         }
         @defer {
           <icons-example />
         } @placeholder {
-          <div class="h-52 animate-pulse rounded-xl bg-surface-dim md:h-28"></div>
+          <div class="bg-surface-dim h-52 animate-pulse rounded-xl md:h-28"></div>
         }
       </div>
     </div>

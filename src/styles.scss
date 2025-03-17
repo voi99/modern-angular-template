@@ -9,6 +9,8 @@
 @include mat.elevation-classes();
 @include mat.app-background();
 
+@import "./tailwind.css";
+
 :root {
   color-scheme: light;
   --readex-font-family: "Readex Pro", sans-serif;
@@ -30,9 +32,6 @@
 .dark {
   color-scheme: dark;
 }
-
-@tailwind base;
-@tailwind utilities;
 
 html,
 body {
