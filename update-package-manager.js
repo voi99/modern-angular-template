@@ -46,6 +46,24 @@ const updatePackageManager = (packageManager) => {
     console.log(`Updated angular.json packageManager to: ${packageManager}`);
   }
 
+  // Update package.json prettier script
+  if (fs.existsSync("package.json")) {
+    const packageConfig = JSON.parse(fs.readFileSync("package.json", "utf8"));
+    if (packageConfig.scripts && packageConfig.scripts.prettier) {
+      const prettierCmd = packageManager === "npm" ? "npx" : packageManager === "yarn" ? "yarn dlx" : `${packageManager}x`;
+      packageConfig.scripts.prettier = `${prettierCmd} prettier --write .`;
+      fs.writeFileSync("package.json", JSON.stringify(packageConfig, null, 2), "utf8");
+      console.log(`Updated package.json prettier script to use: ${prettierCmd}`);
+    }
+  }
+
+  // Update Husky pre-commit hook
+  if (fs.existsSync(".husky/pre-commit")) {
+    const runCmd = packageManager === "npm" ? "npm run" : packageManager === "yarn" ? "yarn" : `${packageManager} run`;
+    fs.writeFileSync(".husky/pre-commit", `${runCmd} quiet-lint\n`);
+    console.log(`Updated .husky/pre-commit to use: ${runCmd}`);
+  }
+
   // Remove existing lock files
   const lockFiles = ["package-lock.json", "pnpm-lock.yaml", "yarn.lock", "bun.lockb"];
   lockFiles.forEach((file) => {
