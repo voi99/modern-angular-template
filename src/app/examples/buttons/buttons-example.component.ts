@@ -9,26 +9,26 @@ import { MatIcon } from "@angular/material/icon";
   template: `
     <card cardTitle="Buttons">
       <div class="flex flex-wrap items-center gap-2">
-        <button mat-flat-button class="mat-xs mat-error">mat-error</button>
-        <button mat-flat-button class="mat-sm mat-tertiary">mat-tertiary</button>
-        <button mat-flat-button class="mat-md">default</button>
-        <button mat-flat-button class="mat-secondary">mat-secondary</button>
-        <button mat-flat-button class="mat-tonal">mat-tonal</button>
+        <button matButton="filled" class="mat-xs mat-error">mat-error</button>
+        <button matButton="filled" class="mat-sm mat-tertiary">mat-tertiary</button>
+        <button matButton="filled" class="mat-md">default</button>
+        <button matButton="filled" class="mat-secondary">mat-secondary</button>
+        <button matButton="tonal">mat-tonal</button>
       </div>
       <div class="mt-2 flex flex-wrap items-center gap-2">
-        <button mat-icon-button aria-label="Settings">
+        <button matIconButton aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-primary" aria-label="Settings">
+        <button matIconButton class="mat-primary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-secondary" aria-label="Settings">
+        <button matIconButton class="mat-secondary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-tertiary" aria-label="Settings">
+        <button matIconButton class="mat-tertiary" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
-        <button mat-icon-button class="mat-error" aria-label="Settings">
+        <button matIconButton class="mat-error" aria-label="Settings">
           <mat-icon>settings</mat-icon>
         </button>
       </div>
