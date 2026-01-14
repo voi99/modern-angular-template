@@ -34,9 +34,9 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@types/jasmine": "~5.1.15",
     "angular-eslint": "21.1.0",
-    "eslint": "^9.28.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-prettier": "^5.5.5",
     "husky": "^9.1.7",
     "jasmine-core": "~5.13.0",
     "karma": "~6.4.0",
@@ -49,6 +49,6 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.53.0"
   }
 }
