@@ -2,18 +2,6 @@
 
 button.mdc-button,
 a.mdc-button {
-  &.mat-tonal {
-    background-color: var(--mat-sys-secondary-container);
-    color: var(--mat-sys-on-secondary-container);
-
-    &:hover {
-      box-shadow: var(--mat-sys-level1);
-    }
-  }
-}
-
-button.mdc-button,
-a.mdc-button {
   &.mat-xs {
     @include mat.button-density(-3);
   }
