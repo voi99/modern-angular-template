@@ -21,6 +21,7 @@ export default [
           {
             type: "attribute",
             style: "camelCase",
+            prefix: "",
           },
         ],
         "@angular-eslint/component-selector": [
@@ -28,6 +29,7 @@ export default [
           {
             type: "element",
             style: "kebab-case",
+            prefix: "",
           },
         ],
       },
