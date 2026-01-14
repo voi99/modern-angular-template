@@ -16,7 +16,6 @@ import { FORM_ERROR_MESSAGES } from "./form-error-messages.token";
 @Component({
   selector: "mat-error[control-errors]",
   template: ` {{ errorMessage() }} `,
-  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ControlErrorsComponent implements AfterViewInit {
