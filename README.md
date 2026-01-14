@@ -1,6 +1,6 @@
 # Modern Angular Template
 
-### Angular v19
+### Angular v21
 
 This repository serves as a template for creating a new modern Angular project. Follow the instructions below to set up your project.
 
@@ -8,6 +8,7 @@ This repository serves as a template for creating a new modern Angular project. 
 - Material 3 (custom theme, components color variants and sizes)
 - Tailwind v4 (Integration with Material)
 - Dynamic form error messages
+- ngxtension included
 - Bun package manager
 - Eslint (new flat config) & Prettier
 - Husky (pre-commit linting)
@@ -16,7 +17,6 @@ This repository serves as a template for creating a new modern Angular project. 
 ## Setup Instructions
 
 1. **Create a new repository using this template:**
-
    - Click the "Use this template" button
    - Then, click “Create a new repository” from the dropdown menu
 
